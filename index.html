@@ -61,6 +61,7 @@
           />
         </figure>
       </section>
+
       <!-- Seção sobre o autor-->
       <section id="about">
         <figure class="about-image">
@@ -120,14 +121,133 @@
           </div>
         </article>
       </section>
+
       <!-- Seção projetos do autor-->
-      <section id="projects"></section>
+      <section id="projects" class="section-container projects-container">
+        <h2>Meus projetos</h2>
+
+        <!--Swiper Container-->
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="project-card">
+                <figure class="project-image">
+                  <img
+                    src="./assets/icons/languages/github.svg"
+                    alt="Ícone Github"
+                  />
+                </figure>
+                <div class="project-tags">
+                  <span class="tag">GitHub</span>
+                </div>
+                <div class="project-buttons">
+                  <a
+                    href="https://github.com/gioroberta"
+                    target="_blank"
+                    class="botao botao-sm"
+                  >
+                    Github
+                  </a>
+                  <a href="#" target="_blank" class="botao-outline botao-sm">
+                    Deploy
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Botões de navegação -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!-- Seção formulários de contato e redes sociais -->
-      <section id="contact"></section>
+      <section id="contact" class="section-container contact-container">
+        <!-- Redes sociais -->
+        <article class="contact-info">
+          <h2>Entre em contato</h2>
+          <p>Sinta-se à vontade para entrar em contato comigo!</p>
+
+          <div class="social-container">
+            <a
+              href="https://www.linkedin.com/in/giovannaroberta/"
+              target="_blank"
+              class="social-icon"
+              aria-label="Linkedin"
+            >
+              <img
+                src="./assets/icons/social/linkedin.svg"
+                alt="Link para o Linkedin"
+              />
+            </a>
+            <a
+              href="https://github.com/gioroberta"
+              target="_blank"
+              class="social-icon"
+              aria-label="GitHub"
+            >
+              <img
+                src="./assets/icons/social/github.svg"
+                alt="Link para o Github"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/gioroberta_"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <img
+                src="./assets/icons/social/instagram.svg"
+                alt="Link para o Instagram"
+              />
+            </a>
+          </div>
+        </article>
+
+        <!-- FORMULÁRIO -->
+        <form id="formulario">
+          <label for="nome">Nome</label>
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            placeholder="Digite o seu nome completo"
+          />
+          <span id="erro-nome"></span>
+          <label for="email">email</label>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="Digite o seu email"
+          />
+          <span id="erro-email"></span>
+          <label for="assunto">assunto</label>
+          <input
+            id="assunto"
+            name="assunto"
+            type="text"
+            placeholder="Digite o assunto da mensagem"
+          />
+          <span id="erro-assunto"></span>
+          <label for="mensagem">mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            type="text"
+            placeholder="Escreva a sua mensagem aqui..."
+          ></textarea>
+          <span id="erro-mensagem"></span>
+
+          <button class="botao" type="submit">Enviar mensagem</button>
+        </form>
+      </section>
     </main>
     <!-- Rodapé da página -->
 
-    <footer></footer>
+    <footer>Desenvolvido por Giovanna Roberta</footer>
   </body>
 </html>
