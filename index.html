@@ -15,7 +15,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="author" content="iovanna Roberta" />
+    <meta name="author" content="Giovanna Roberta" />
     <meta
       name="description"
       content="Portfólio de Giovanna Roberta, desenvolvedora Full Stack em formação,
@@ -24,6 +24,12 @@
     <meta name="robots" content="index, follow" />
 
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!-- Link para a Folha de Estilo da Página - CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -76,7 +82,7 @@
       </section>
 
       <!-- Seção sobre o autor-->
-      <section id="about">
+      <section id="about" class="section-container about-container">
         <figure class="about-image">
           <img src="./assets/img/avatar_dev_woman.svg" alt="Foto do perfil" />
         </figure>
@@ -230,7 +236,7 @@
             placeholder="Digite o seu nome completo"
           />
           <span id="erro-nome"></span>
-          <label for="email">email</label>
+          <label for="email">E-mail</label>
           <input
             id="email"
             name="email"
@@ -238,7 +244,7 @@
             placeholder="Digite o seu email"
           />
           <span id="erro-email"></span>
-          <label for="assunto">assunto</label>
+          <label for="assunto">Assunto</label>
           <input
             id="assunto"
             name="assunto"
@@ -246,7 +252,7 @@
             placeholder="Digite o assunto da mensagem"
           />
           <span id="erro-assunto"></span>
-          <label for="mensagem">mensagem</label>
+          <label for="mensagem">Mensagem</label>
           <textarea
             id="mensagem"
             name="mensagem"
